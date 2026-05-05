@@ -15,3 +15,4 @@ echo "=== Variables obtenidas de Vault ==="
 echo "VARIABLE_1: $VARIABLE_1"
 echo "VARIABLE_2: $VARIABLE_2"
 echo "===================================="
+
