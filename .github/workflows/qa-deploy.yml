@@ -16,3 +16,4 @@ jobs:
         run: |
           curl -X POST ${{ secrets.DOKPLOY_WEBHOOK_URL }} \
             -H "Content-Type: application/json"
+            
