@@ -4,7 +4,7 @@ echo "=== Obteniendo variables desde Vault (.149) ==="
 
 SECRETS=$(wget -q -O - \
   --header="X-Vault-Token: $VAULT_TOKEN" \
-  http://172.24.99.149:8200/v1/secret/data/smarttwinlabs/qa)
+  http://172.24.100.149:8200/v1/secret/data/smarttwinlabs/qa)
 
 export DATABASE_URL=$(echo $SECRETS | jq -r '.data.data.DATABASE_URL')
 export JWT_SECRET=$(echo $SECRETS | jq -r '.data.data.JWT_SECRET')
