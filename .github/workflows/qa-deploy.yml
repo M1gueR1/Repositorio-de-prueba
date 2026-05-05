@@ -12,8 +12,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Trigger Dokploy deploy
-        run: |
-          curl -X POST ${{ secrets.DOKPLOY_WEBHOOK_URL }} \
-            -H "Content-Type: application/json"
-            
+      - name: Deploy triggered
+        run: echo "Push a qa detectado - Dokploy hace el deploy automaticamente"
