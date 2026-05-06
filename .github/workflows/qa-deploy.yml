@@ -16,4 +16,5 @@ jobs:
         run: |
           curl -L -X POST http://localhost:3000/api/deploy/compose/9IwqljSqr4o-NsFxrYwhH \
             -H "Content-Type: application/json" \
-            -d '{"ref":"refs/heads/main"}'
+            -H "x-github-event: push" \
+            -d '{"ref":"refs/heads/qa","head_commit":{"message":"deploy","id":"abc123"}}'
