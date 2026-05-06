@@ -14,6 +14,6 @@ jobs:
 
       - name: Trigger Dokploy deploy
         run: |
-          curl -v -X POST http://localhost:3000/api/deploy/compose/9IwqljSqr4o-NsFxrYwhH \
+          curl -L -X POST http://localhost:3000/api/deploy/compose/9IwqljSqr4o-NsFxrYwhH \
             -H "Content-Type: application/json" \
-            -d '{"branch":"qa"}'
+            -d '{"ref":"refs/heads/qa"}'
