@@ -16,4 +16,4 @@ jobs:
         run: |
           curl -L -X POST http://localhost:3000/api/deploy/compose/9IwqljSqr4o-NsFxrYwhH \
             -H "Content-Type: application/json" \
-            -d '{"ref":"refs/heads/qa"}'
+            -d '{"ref":"refs/heads/main"}'
